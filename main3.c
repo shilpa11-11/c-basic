@@ -1,16 +1,17 @@
-#include<stdio.h>
-
-int add(int num){
- if(num <= 0){
-    return 0;
-
-}
-if(num % 10==3 || num % 10 == 5 || num % 10==7){
-    return add(num-1);
-
-}
-return num + add(num-1);
-}
-int main(){
-printf("%d",add(100));
-}
+#include <stdio.h>
+int main() {
+    FILE *file;
+    char type[10];
+    float amount;
+    file = fopen("Bank.txt", "a");
+    if (file == NULL) {
+        printf("Error opening file!\n");
+        return 1;}
+    printf("Credit or Debit ");
+    scanf("%s", type);
+    printf("Enter amount: ");
+    scanf("%f", &amount);
+    fprintf(file, "%s: %.2f\n", type, amount);
+    fclose(file);
+    printf("Transaction success.\n");
+    return 0; }

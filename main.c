@@ -1,25 +1,18 @@
-//#include <stdio.h>
+//#include<stdio.h>
+//int main(){
+//FILE *file = fopen("example.txt","w");
 //
+//if (file== NULL){
 //
-//int addNumbers(int a, int b) {
-//    return a + b;
+//    printf("error opening file for writing.\n");
+//    return 1;
 //}
 //
-//int main() {
-//    int num1, num2, sum;
+//fprintf(file,"hello,world\n");
+//fprintf(file,"this is a simple file handling example in c.\n");
 //
+//fclose(file);
 //
-//    printf("Enter the first number: ");
-//    scanf("%d", &num1);
-//
-//    printf("Enter the second number: ");
-//    scanf("%d", &num2);
-//
-//
-//    sum = addNumbers(num1, num2);
-//
-//
-//    printf("The sum of %d and %d is: %d\n", num1, num2, sum);
-//
-//    return 0;
+//printf("data written to file successfully\n");
+//return 0;
 //}
